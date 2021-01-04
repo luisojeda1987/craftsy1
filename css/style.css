@@ -1,0 +1,148 @@
+:root{
+    --colorOrange:#ef4c2b;
+    --colorBorde:#aedbe5;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+li{
+    list-style: none;
+    display: inline;
+}
+body{
+    background-image: url(../images/bg-2.png);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.home{
+    max-width: 1140px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+header{
+    background-color: var(--colorOrange);
+    overflow: hidden;
+    padding: 15px;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    max-width: 1140px;
+}
+header img{
+    float: left;
+    margin-right: 20px;
+}
+ul.ingreso{
+    float: right;
+
+}
+ul.menu{
+    float: left;
+    margin-top: 15px;
+}
+
+/* Main */
+
+main{
+    background-color: white;
+    width: 90%;
+    margin: 120px 5% 20px 5%;
+    overflow: hidden;
+}
+main article{
+    padding: 10px;
+}
+main article img{
+    width: 100%;
+}
+main article h3{
+    margin: 20px 0px;
+}
+main article a{
+    background-color: var(--colorOrange);
+    margin: 20px 0;
+    padding: 10px;
+    display: inline-block;
+}
+
+/* Aside */
+
+aside{
+    width: 90%;
+    margin:20px 5%;
+
+}
+aside section{
+    overflow: hidden;
+}
+aside section h2{
+    background-color: white;
+    padding: 10px 10px;
+    margin: 20px 0px;
+}
+aside section article{
+    background-color: white;
+    border: 2px solid var(--colorBorde);
+    margin: 10px 0;
+    padding: 10px;
+    overflow: hidden;
+}
+aside section article img{
+    float: left;
+}
+aside section article p{
+    float: left;
+    display: block;
+    width: 150px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+aside section.publicidad article img{
+    width: 95%;
+    margin: 0 2.5%;
+}
+
+@media(min-width:426px){
+
+    main article{
+        padding: 10px;
+        width: 50%;
+        float:left
+    }
+    aside section article{
+        width: 50%;
+        float: left;
+    }
+}
+@media(min-width:769px){
+
+    main{
+        width: 60%;
+        float: left;
+        margin: 120px 2.5% 30px 2.5%;
+    }
+    aside{
+        width: 30%;
+        float: left;
+        margin: 20px 2.5%;
+        margin-top: 120px;
+    }
+    aside section article{
+        width: 100%;
+        margin: 5px 0;
+    }
+    aside section h2{
+        margin: 0 0 10px 0px;
+    }
+    aside section.publicidad h2{
+        margin: 20px 0;
+    }
+}
